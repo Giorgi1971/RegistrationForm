@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up</title>
+</head>
+<body>
+    <div name="div1">
+<!-- ტექსტული ველის ფორმა - სახელი გვარი, წელი -->
+    <form action="http://localhost/web_developing/php_speqtri.php" method="POST" name="login" enctype="multipart/form-data">
+        <!-- ჩარჩოში ჩასმა მთლიანი ფორმის ფიელდსეთ -->
+    <fieldset>
+        <legend>სარეგისტრაციო ფორმა</legend>
+        <label for="username"> სახელი-:</label>
+            <input type="text" name="username" placeholder="Name"><br>
+        <label for="surname"> გვარი  - -:</label>
+        <input type="text" name="surname" placeholder="Surname"><br>
+        <label for="E_mail"> E_mail - :</label>
+        <input type="mail" name="E_mail" placeholder="user@mail.com"><br>           
+        <label>პაროლი: </label>
+            <input type="password" name="psw1" placeholder="Paswword"><br>
+        <label>პაროლი: </label>
+            <input type="password" name="psw2" placeholder="Confirm Paswword"><br>
+
+<fieldset name="birthdate"><legend for="birthdate">დაბადების თარიღი:</legend>
+<label for="birthdatem"> დაბადების თარიღი</label>
+<input type="date" name="birthdatem" min="1850-01-01" max="2050-01-01">
+</fieldset>
+
+<fieldset name="birthdate"><legend for="birthdate">დაბადების თარიღი:</legend>
+    <label for="selectday"> დღე - </label>
+    <select name="selectday">
+        <option>  </option>    <option>01</option>    <option>02</option>    <option>03</option>    <option>04</option>
+        <option>05</option>    <option>06</option>    <option>07</option>    <option>08</option>    <option>09</option>
+        <option>10</option>    <option>11</option>    <option>12</option>    <option>13</option>    <option>14</option>
+        <option>15</option>    <option>16</option>    <option>17</option>    <option>18</option>    <option>19</option>
+        <option>20</option>    <option>21</option>    <option>22</option>    <option>23</option>    <option>24</option>
+        <option>25</option>    <option>26</option>    <option>27</option>    <option>28</option>    <option>29</option>
+        <option>30</option>    <option>31</option>
+    </select>
+    <label for="selectmounth"> თვე - </label>
+    <select name="selectmounth">
+        <option>       </option>
+        <option>იანვარი</option>    <option>თებერვალი</option>      <option>მარტი</option>  
+        <option>აპრილი</option>      <option>მაისი</option>      <option>ივნისი</option>  
+        <option>ივლისი</option>      <option>აგვისტო</option>      <option>სექტემბერი</option>  
+        <option>ოქტომბერი</option>      <option>ნოემბერი</option>      <option>დეკემბერი</option>  
+    </select>
+    <label for="selectyear"> წელი - </label>
+    <select name="selectyear">
+        <option>    </option>
+        <option>1950</option>     <option>1951</option>     <option>1952</option>     <option>1953</option>     <option>1954</option>     <option>1955</option>     <option>1956</option>     <option>1957</option>     <option>1958</option>     <option>1959</option> 
+        <option>1960</option>     <option>1961</option>     <option>1962</option>     <option>1963</option>     <option>1964</option>     <option>1965</option>     <option>1966</option>     <option>1967</option>     <option>1968</option>     <option>1969</option> 
+        <option>1970</option>     <option>1971</option>     <option>1972</option>     <option>1973</option>     <option>1974</option>     <option>1975</option>     <option>1976</option>     <option>1977</option>     <option>1978</option>     <option>1979</option> 
+        <option>1980</option>     <option>1981</option>     <option>1982</option>     <option>1983</option>     <option>1984</option>     <option>1985</option>     <option>1986</option>     <option>1987</option>     <option>1988</option>     <option>1989</option>
+        <option>1990</option>     <option>1991</option>     <option>1992</option>     <option>1993</option>     <option>1994</option>     <option>1995</option>     <option>1996</option>     <option>1997</option>     <option>1998</option>     <option>1999</option> 
+        <option>2000</option>     <option>2001</option>     <option>2002</option>     <option>2003</option>     <option>2004</option>     <option>2005</option>     <option>2006</option>     <option>2007</option>     <option>2008</option>     <option>2009</option> 
+        <option>2010</option>     <option>2011</option>     <option>2012</option>     <option>2013</option>     <option>2014</option>     <option>2015</option>     <option>2016</option>     <option>2017</option>     <option>2018</option>     <option>2019</option> 
+        <option>2020</option> 
+    </select>
+</fieldset> 
+            
+<!-- ფორმა გადამრთველი - სქესის შესახ -->        
+    <fieldset name="gadamrtveli_radio"> <legend>სქესი:</legend>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">მამრობითი</label> 
+        <input type="radio" name="gender" id="female" value="female"> 
+        <label for="female">მდედრობითი </label><br/>
+    </fieldset>
+<!-- ალმებიანი ფორმა - ინფორმაციის შესახებ -->
+    <fieldset name="check_main"> <legend>საიდან გაქვთ ინფორმაცია ჩვენს შესახებ:</legend>
+        <input type="checkbox" name="info1name" id="info1" value="ინტერნეტით:" > <label for="info1">ინტერნეტით</label>
+        <input type="checkbox" name="info2name" id="info2" value="მეგობრებისგან" checked> <label for="info2">მეგობრებისგან</label>
+        <input type="checkbox" name="info3name" id="info3" value="ტელევიზიით"> <label for="info3">ტელევიზიით</label>
+        <input type="checkbox" name="info4name" id="info4" value="სხვა"> <label for="info4">ტელევიზიით</label>
+    </fieldset>
+<!-- ფაილის ასატვირთი ფორმა -->
+<hr>
+<label>ატვირთეთ - ფაილი:</label>
+    <input type="file" name="file1" accept="file_extension">
+<label> ვიდეო:</label>
+    <input type="file" name="video1" accept= "video/*">
+<label> სურათი:</label>
+    <input type="file" name="picture1" accept="image/*"><br>
+
+<!--
+        <input type="file" name="picture" accept="image/*">
+        <input type="file" name="picture" accept="audio/*">
+        <input type="file" name="picture" accept="video/*">
+        <input type="file" name="picture" accept="media_type">
+-->
+<!-- ფაილის ასატვირთი ფორმა 
+    შენიშვნა: select ელემენტში multiple ატრიბუტის დამატება <select multiple> იძლევა 
+    რამოდენიმე პუნქტის ერთდროულად მონიშვნის საშუალებას (ctrl კლავიშის დახმარებით).
+    ასევე შეიძლება <select size="3">
+-->
+
+    <hr>
+<label for="pp_llang">აირჩეით პროგრამირების ენა:</label>
+    <select name="pp_llang">
+        <option value=" ">&nbsp;</option>    
+        <optgroup label="Back-End:"></optgroup>
+        <option value="Python" name="prog_lang1">Python</option> 
+        <option value="PHP" name="prog_lang2">PHP</option> 
+        <option value="C##" name="prog_lang3">C##</option> 
+        <optgroup label="Front-End:"></optgroup>
+        <option value="HTML" name="prog_lang4">HTML</option> 
+        <option value="CSS" name="prog_lang5">CSS</option> 
+        <option value="JavaScript" name="prog_lang6">JavaScript</option>
+    </select><br>
+    <hr>
+        <input type="submit" value="Registration">
+        <hr>
+    <!-- აქ მთავრდება ფორმის ჩარჩო -->
+</fieldset>
+
+    </form>
+
+    <form action="action.php" method="GET" enctype="application/x-www-form urlencoded"name="mail"> 
+        მოგვწერეთ, თქვენი აზრი ჩვეთვის მნიშვნელოვანია:<br /> 
+        <textarea cols="70" rows="3">&nbsp;</textarea> <br /> 
+        <input type="submit" value="Send Mail"> 
+        <input type="reset" value="Reset" >
+    </form>
+    <!-- აქ მთავრდება წერილის გაგზავნის ფორმა ჩარჩო -->
+</div>
+    <hr><hr>
+</body>
+</html>
